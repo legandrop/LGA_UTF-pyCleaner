@@ -2,7 +2,7 @@
 
 ## Description
 
-LGA UTF-pyCleaner is a tool designed to remove accents and replace the letter 'ñ' with 'n' in Python (.py) files. It processes all .py files in a specified directory, including its subdirectories.
+LGA UTF-pyCleaner is a tool designed to remove accents, replace the letter 'ñ' with 'n', and normalize other special characters in Python (.py) files. It processes all .py files in a specified directory, including its subdirectories.
 
 ## Files
 
@@ -35,14 +35,16 @@ LGA UTF-pyCleaner is a tool designed to remove accents and replace the letter '�
 ## What the Script Does
 
 - Scans all .py files in the specified directory and its subdirectories.
-- Removes accents from characters (e.g., á -> a, é -> e).
+- Removes accents from characters (e.g., á -> a, é -> e, ü -> u).
 - Replaces 'ñ' with 'n' and 'Ñ' with 'N'.
+- Normalizes other special characters to their closest ASCII equivalents.
 - Displays which files were modified and shows the specific changes made to each file.
 
 ## Note
 
 - The script will not modify itself to prevent unintended alterations.
 - Always backup your files before running this script on important code.
+- The script preserves the original encoding of the files (UTF-8).
 
 ## Version
 
